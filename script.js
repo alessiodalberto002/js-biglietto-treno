@@ -7,7 +7,10 @@ const scontoAnzini = price * (40/100)
 const prezzoFinaleMinori = price - scontoMinori; 
 const prezzoFinaleAnziani = price - scontoAnzini;
 
-if(eta < 18 || eta > 65){
+if(eta < 18){
     console.log(prezzoFinaleMinori);
+} else if(eta > 65){
     console.log(prezzoFinaleAnziani);
+} else {
+    console.log(price);
 }
